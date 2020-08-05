@@ -146,7 +146,7 @@ class StripeDashboard:
         print(self.browser.current_url)
 
     def staystill(self):
-        time.sleep(10)
+        time.sleep(10*30)
 
     def shutdown(self):
         self.browser.quit()

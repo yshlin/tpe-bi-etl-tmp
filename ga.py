@@ -16,10 +16,11 @@ SCOPES = ['https://www.googleapis.com/auth/analytics.readonly']
 
 FILENAME_PATTERN = './ga/vpn-ga%s-%s.csv'
 
-# start = datetime.datetime.strptime('2020-07-16', '%Y-%m-%d')
-# end = datetime.datetime.strptime('2020-07-20', '%Y-%m-%d')
+# start = datetime.datetime.strptime('2020-07-30', '%Y-%m-%d')
+# end = datetime.datetime.strptime('2020-08-03', '%Y-%m-%d')
 # date_list = [start + datetime.timedelta(days=x) for x in range((end - start).days + 1)]
-date_list = [datetime.datetime.today() - datetime.timedelta(days=1)]
+# date_list = [datetime.datetime.today() - datetime.timedelta(days=1)]
+date_list = [datetime.datetime.today() - datetime.timedelta(days=x) for x in range(1, 8)]
 PREFIX = ''
 FILTER = '(^/$|^/\#|^/\?)'
 GOAL = 'ga:goal1Starts'
